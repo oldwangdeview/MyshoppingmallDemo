@@ -2,6 +2,7 @@ package com.shoppingmall.cdz.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -118,6 +119,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
                 break;
             case R.id.re_local:
                 mViewPager.setCurrentItem(1, false);
+                new LogUntil(this,TAG,1+"");
                 new LogUntil(this,TAG,1+"");
                 break;
 
