@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_30"
+        android:background="@drawable/shpe_homehead_title">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@null">
+
+            <TextView
+                android:id="@+id/path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  成都"
+                android:textSize="@dimen/sp_15"
+                android:layout_centerVertical="true"
+                android:textColor="@color/c_ffffff"
+                android:drawableLeft="@mipmap/local_getgps"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_35"
+                android:background="@drawable/shpe_loacl_title"
+                android:layout_marginRight="@dimen/dp_35"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:paddingLeft="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_12"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/path">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/find_image"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColor="@color/c_ffffff"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:textColorHint="#ACD8F9"
+                    android:textSize="@dimen/sp_12"
+                    android:hint="点击输入你所感兴趣的类型"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_height="match_parent">
+
+        <com.shoppingmall.cdz.view.YRecycleview
+            android:layout_width="match_parent"
+            android:background="@color/c_ffffffff"
+            android:id="@+id/recycle_fragment_home"
+            android:layout_height="match_parent">
+        </com.shoppingmall.cdz.view.YRecycleview>
+    </RelativeLayout>
+</LinearLayout>

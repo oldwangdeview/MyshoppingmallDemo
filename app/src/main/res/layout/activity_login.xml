@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        >
+
+        <ImageView
+            android:id="@+id/return_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/colose_image"/>
+
+        <TextView
+            android:id="@+id/login_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_17"
+            android:text="登录"
+            android:textColor="@color/c_168AE1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dp_67"
+        android:layout_height="@dimen/dp_67"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_60"
+        android:src="@mipmap/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/dp_25"
+        android:paddingLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_50"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/c_ff333333"/>
+
+        <EditText
+            android:id="@+id/phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:hint="请输入您的手机号"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColorHint="@color/c_cccccc"
+            android:background="@null"/>
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/c_eeeeee"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_25">
+
+        <TextView
+            android:id="@+id/code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/c_ff333333"
+            />
+        <EditText
+            android:id="@+id/code_num"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:minWidth="@dimen/dp_200"
+            android:inputType="number"
+            android:textSize="@dimen/sp_14"
+            android:hint="请输入短信验证码"
+            android:background="@null"
+            android:textColorHint="@color/c_999999"
+            android:textColor="@color/c_ff333333"
+            android:layout_below="@+id/code_text"
+            android:layout_marginTop="@dimen/dp_10"/>
+
+        <Button
+            android:id="@+id/getcode"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_30"
+            android:text="获取验证码"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/c_168AE1"
+            android:gravity="center"
+            android:background="@drawable/shpe_getcode_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/c_eeeeee"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_25">
+
+        <TextView
+            android:id="@+id/setpassword_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置密码"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/c_ff333333"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@+id/setpassword_text"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_25"
+                android:layout_weight="1"
+                android:minWidth="@dimen/dp_200"
+                android:inputType="textPassword"
+                android:textSize="@dimen/sp_14"
+
+                android:hint="请设置6-20位数字或字母"
+                android:background="@null"
+                android:textColorHint="@color/c_999999"
+                android:textColor="@color/c_ff333333"
+             />
+
+            <ImageView
+                android:id="@+id/seepassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/notseepassword"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/c_eeeeee"/>
+     <TextView
+
+         android:id="@+id/ts"
+         android:layout_marginTop="@dimen/dp_50"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/dp_17"
+         android:textSize="@dimen/sp_13"
+         android:visibility="invisible"
+         android:textColor="@color/c_e94950"
+         />
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/shpe_loginbtn"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="立即进入"
+        android:textColor="@color/c_ffffff"
+        android:gravity="center"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginLeft="@dimen/dp_15"/>
+
+    <TextView
+        android:id="@+id/login_uagment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/c_999999"/>
+
+</LinearLayout>

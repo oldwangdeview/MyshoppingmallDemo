@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/dp_15"
+    android:paddingTop="@dimen/dp_15"
+    android:paddingLeft="@dimen/dp_15"
+    android:orientation="vertical"
+    android:background="@color/c_ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/mrtx"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_13"
+            android:textColor="#2A2D2F"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:text=" "/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布时间: 2018-11-28"
+            android:textSize="11sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#9FA8B0"/>
+        
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:textSize="@dimen/sp_15"
+        android:textColor="#2A2D2F"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="求购一套300元的茶几，89成新都没什么"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_height="@dimen/dp_80">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

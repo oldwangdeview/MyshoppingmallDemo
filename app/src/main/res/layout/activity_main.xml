@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffffff"
+    >
+
+<com.shoppingmall.cdz.view.ForbidScrollViewpager
+    android:layout_width="match_parent"
+    android:layout_above="@+id/view_line"
+    android:id="@+id/viewpager_activity_main"
+    android:layout_height="match_parent"></com.shoppingmall.cdz.view.ForbidScrollViewpager>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:background="@color/c_ffffff"
+        android:layout_above="@+id/rl_bootom"
+        android:layout_height="@dimen/dp_1"></View>
+
+    <RelativeLayout
+
+        android:id="@+id/rl_bootom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_height="@dimen/dp_69">
+        <RadioGroup
+
+            android:id="@+id/rg_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_49"
+
+            android:background="@color/c_ffffffff"
+            android:orientation="horizontal">
+
+            <com.shoppingmall.cdz.view.HomeRadioButton
+
+                android:id="@+id/rb_home"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/button_home_select"
+                android:text="首页" />
+
+
+
+            <com.shoppingmall.cdz.view.HomeRadioButton
+                android:id="@+id/re_local"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/button_bendi_select"
+                android:text="本地" />
+            <!--   android:drawableTop="@drawable/button_service_select"-->
+            <com.shoppingmall.cdz.view.HomeRadioButton
+                android:id="@+id/rb_addmessage"
+                android:drawableTop="@drawable/button_addmessage_select"
+                android:clickable="false"
+                style="@style/tab_menu_item"
+                android:text="发布"
+                />
+
+            <com.shoppingmall.cdz.view.HomeRadioButton
+                android:id="@+id/rb_shoping"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/button_shoping_select"
+                android:text="商城" />
+            <com.shoppingmall.cdz.view.HomeRadioButton
+                android:id="@+id/rb_my"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/button_my_select"
+                android:text="我的"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+    <FrameLayout
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+    <ImageView
+    android:layout_marginBottom="@dimen/dp_35"
+    android:layout_width="@dimen/dp_60"
+    android:layout_height="@dimen/dp_60"
+    android:id="@+id/Iv_home_bg"
+    android:layout_gravity="bottom"
+        android:background="@drawable/addimage_shape"
+        android:padding="@dimen/dp_5"
+    android:scaleType="fitXY"
+    android:src="@mipmap/addmessage" />
+
+    <!--<TextView
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+
+    android:layout_gravity="center|bottom"
+    android:layout_marginBottom="@dimen/dp_7"
+    android:text="共享家"
+    android:textColor="@color/text_gray"
+    android:textSize="@dimen/sp_12" />-->
+
+
+    </FrameLayout>
+
+</RelativeLayout>

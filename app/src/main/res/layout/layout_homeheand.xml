@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c_ffffff">
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:padding="@dimen/dp_12">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/id_cb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:canLoop="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <!--汽车服务-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/car_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/c_ff333333"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="汽车服务"/>
+
+        </LinearLayout>
+        <!--房屋租售-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/house_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/c_ff333333"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="房屋租售"/>
+
+        </LinearLayout>
+        <!--换货联盟-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/hh_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/c_ff333333"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="换货联盟"/>
+
+        </LinearLayout>
+        <!--酒水直购-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/jiusui_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/c_ff333333"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="酒水直购"/>
+
+        </LinearLayout>
+        <!--招商加盟-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zshang_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/c_ff333333"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="招商加盟"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/c_f5f5f5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/dp_20"
+        android:layout_height="@dimen/dp_70"
+        android:padding="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="@dimen/dp_34"
+            android:layout_height="@dimen/dp_36"
+            android:src="@mipmap/new_message_text"/>
+
+        <!--<com.shoppingmall.cdz.view.LooperTextView-->
+            <!--android:layout_marginLeft="@dimen/dp_10"-->
+            <!--android:layout_toRightOf="@+id/icon_notice"-->
+            <!--android:id="@+id/lloopertextview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@+id/iv_more_layout_head_home"-->
+            <!--android:background="@color/c_ffffffff">-->
+
+        <!--</com.shoppingmall.cdz.view.LooperTextView>-->
+
+        
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="信息集散地"
+        android:textSize="@dimen/sp_17"
+        android:textColor="#2A2D2F"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dp_15"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/home_head_image1"
+                android:padding="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拼车/顺风车"
+                    android:textColor="@color/c_ffffff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_17"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_20"
+                    android:textSize="@dimen/sp_10"
+                    android:background="@drawable/shape_head_image"
+                    android:text="400条新需求"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_5"
+                    android:textColor="#C446F2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_5"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dp_10"
+                android:background="@mipmap/home_image_2"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拉货/找货车"
+                    android:textColor="@color/c_ffffff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_17"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_20"
+                    android:textSize="@dimen/sp_10"
+                    android:background="@drawable/shape_head_image"
+                    android:text="103条新需求"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_5"
+                    android:textColor="#C446F2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_5"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/home_head_image3"
+                android:padding="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="二手闲置"
+                    android:textColor="@color/c_ffffff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_17"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_20"
+                    android:textSize="@dimen/sp_10"
+                    android:background="@drawable/shape_head_image"
+                    android:text="78条新需求"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_5"
+                    android:textColor="#3B8BEB"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_5"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dp_10"
+                android:background="@mipmap/home_head_image6"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他信息"
+                    android:textColor="@color/c_ffffff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_17"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_20"
+                    android:textSize="@dimen/sp_10"
+                    android:background="@drawable/shape_head_image"
+                    android:text="103条新需求"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_5"
+                    android:textColor="#5072E9"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_5"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/home_head_image5"
+                android:padding="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我要换货"
+                    android:textColor="@color/c_ffffff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_17"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_20"
+                    android:textSize="@dimen/sp_10"
+                    android:background="@drawable/shape_head_image"
+                    android:text="25条新需求"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_5"
+                    android:textColor="#3B8BEB"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_5"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dp_10"
+                android:background="@mipmap/home_head_image_4"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="求职/招聘"
+                    android:textColor="@color/c_ffffff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_17"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_20"
+                    android:textSize="@dimen/sp_10"
+                    android:background="@drawable/shape_head_image"
+                    android:text="103条新需求"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_5"
+                    android:textColor="#EB7839"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_5"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="@dimen/dp_30">
+
+    </android.support.v7.widget.RecyclerView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/c_f5f5f5"/>
+</LinearLayout>
+</RelativeLayout>

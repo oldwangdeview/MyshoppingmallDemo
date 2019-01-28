@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ffffff">
+    <View
+    android:id="@+id/back_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="#88888888"/>
+    <ImageView
+    android:id="@+id/image1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:src="@mipmap/login_logo"
+    />
+
+    <TextView
+    android:id="@+id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/c_168AE1"
+    android:layout_below="@+id/image1"
+    android:layout_marginTop="@dimen/dp_13"
+    android:layout_centerHorizontal="true"
+    android:text="川滇黔物流港"
+    android:textSize="@dimen/sp_18"/>
+    <TextView
+    android:id="@+id/text2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text1"
+    android:layout_centerHorizontal="true"
+    android:text="CHUANDIANQIAN LOGISTICSPORT"
+    android:textSize="@dimen/sp_10"
+    android:layout_marginTop="@dimen/dp_7"
+    android:textColor="@color/c_168AE1"/>
+
+</RelativeLayout>
